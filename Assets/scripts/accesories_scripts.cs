@@ -31,7 +31,15 @@ public class accesories_scripts : MonoBehaviour
 
     void Start()
     {
-        SetTogglesActive(false); // sākumā paslēpti
+        SetTogglesActive(false); 
+
+        Canvas canvas = a9.GetComponent<Canvas>();
+        if (canvas != null)
+        {
+            canvas.sortingOrder = -1;
+        }
+
+        a9.transform.SetAsFirstSibling();
     }
 
     public void ToggleTogglesVisibility()
