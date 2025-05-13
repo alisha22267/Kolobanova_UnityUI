@@ -25,6 +25,7 @@ public class bangs1_scripts : MonoBehaviour
 
     public bool panelVisible = false;
 
+
     void Start()
     {
         mainButton.SetActive(true);
