@@ -10398,8 +10398,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.0010880828}
-  m_SizeDelta: {x: 1121, y: 630.8}
+  m_AnchoredPosition: {x: 0.0050051, y: 0}
+  m_SizeDelta: {x: 1355.5, y: 762}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &387202019
 MonoBehaviour:
@@ -13367,6 +13367,7 @@ GameObject:
   - component: {fileID: 488697198}
   - component: {fileID: 488697197}
   - component: {fileID: 488697199}
+  - component: {fileID: 488697200}
   m_Layer: 0
   m_Name: body3
   m_TagString: Untagged
@@ -13444,6 +13445,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canva: {fileID: 0}
+--- !u!114 &488697200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488697195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: OnImage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: StopSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &491619255
 GameObject:
   m_ObjectHideFlags: 0
@@ -21824,6 +21870,7 @@ GameObject:
   - component: {fileID: 758581856}
   - component: {fileID: 758581855}
   - component: {fileID: 758581857}
+  - component: {fileID: 758581858}
   m_Layer: 0
   m_Name: body2
   m_TagString: Untagged
@@ -21901,6 +21948,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canva: {fileID: 0}
+--- !u!114 &758581858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758581853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: OnImage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: StopSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &761372640
 GameObject:
   m_ObjectHideFlags: 0
@@ -23818,6 +23910,7 @@ GameObject:
   - component: {fileID: 836918272}
   - component: {fileID: 836918273}
   - component: {fileID: 836918274}
+  - component: {fileID: 836918275}
   m_Layer: 0
   m_Name: ScriptsFolder
   m_TagString: Untagged
@@ -24484,6 +24577,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6125a1c71878cc34ca4c2354e3f4b36c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &836918275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836918247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586f38ec4dc879b44befdd0c5c31c407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1642116878}
+  audioClips:
+  - {fileID: 8300000, guid: 522e06ff449c8764ba899737659939ad, type: 3}
 --- !u!1 &838277324
 GameObject:
   m_ObjectHideFlags: 0
@@ -44887,6 +44995,7 @@ GameObject:
   - component: {fileID: 1592005832}
   - component: {fileID: 1592005831}
   - component: {fileID: 1592005833}
+  - component: {fileID: 1592005834}
   m_Layer: 0
   m_Name: base_body
   m_TagString: Untagged
@@ -44964,6 +45073,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canva: {fileID: 0}
+--- !u!114 &1592005834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592005829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: StopSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: OnImage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1593695041
 GameObject:
   m_ObjectHideFlags: 0
@@ -44976,6 +45130,7 @@ GameObject:
   - component: {fileID: 1593695044}
   - component: {fileID: 1593695043}
   - component: {fileID: 1593695045}
+  - component: {fileID: 1593695046}
   m_Layer: 0
   m_Name: body6
   m_TagString: Untagged
@@ -45053,6 +45208,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canva: {fileID: 0}
+--- !u!114 &1593695046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593695041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: OnImage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: StopSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1594042360
 GameObject:
   m_ObjectHideFlags: 0
@@ -56296,6 +56496,7 @@ GameObject:
   - component: {fileID: 2023423221}
   - component: {fileID: 2023423220}
   - component: {fileID: 2023423222}
+  - component: {fileID: 2023423223}
   m_Layer: 0
   m_Name: body5
   m_TagString: Untagged
@@ -56373,6 +56574,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canva: {fileID: 0}
+--- !u!114 &2023423223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023423218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: OnImage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: StopSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2025235316
 GameObject:
   m_ObjectHideFlags: 0
@@ -57810,6 +58056,7 @@ GameObject:
   - component: {fileID: 2094494111}
   - component: {fileID: 2094494110}
   - component: {fileID: 2094494112}
+  - component: {fileID: 2094494113}
   m_Layer: 0
   m_Name: body4
   m_TagString: Untagged
@@ -57887,6 +58134,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canva: {fileID: 0}
+--- !u!114 &2094494113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094494108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: OnImage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836918275}
+          m_TargetAssemblyTypeName: DollSource_scripts, Assembly-CSharp
+          m_MethodName: StopSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2096854545
 GameObject:
   m_ObjectHideFlags: 0
