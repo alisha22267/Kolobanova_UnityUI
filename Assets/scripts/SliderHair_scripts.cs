@@ -9,6 +9,7 @@ public class SliderHair_scripts : MonoBehaviour
     public GameObject scaleUP;
     public GameObject rotationSlider;
     public GameObject[] imageFields = new GameObject[10];
+    private GameObject selectedClothingItem = null;
 
     private bool slidersVisible = false;
 
@@ -19,13 +20,17 @@ public class SliderHair_scripts : MonoBehaviour
         scaleUP.SetActive(false);
     }
 
+    public void SelectClothingItem(GameObject item)
+    {
+        selectedClothingItem = item;
+    }
+
     public void ChangeUP()
     {
+        if (selectedClothingItem == null) return;
+
         float currentScale = scaleUP.GetComponent<Slider>().value;
-        foreach (GameObject imageField in imageFields)
-        {
-            imageField.transform.localScale = new Vector2(1F * currentScale, 1F * currentScale);
-        }
+        selectedClothingItem.transform.localScale = new Vector2(1F * currentScale, 1F * currentScale);
     }
 
     public void PogaMain()
@@ -38,21 +43,19 @@ public class SliderHair_scripts : MonoBehaviour
 
     public void ChangeScale()
     {
+        if (selectedClothingItem == null) return;
+
         float currentHeight = scaleSlider.GetComponent<Slider>().value;
-        foreach (GameObject imageField in imageFields)
-        {
-            Vector3 scale = imageField.transform.localScale;
-            imageField.transform.localScale = new Vector3(scale.x, currentHeight, scale.z);
-        }
+        Vector3 scale = selectedClothingItem.transform.localScale;
+        selectedClothingItem.transform.localScale = new Vector3(scale.x, currentHeight, scale.z);
     }
 
     public void ChangeRotation()
     {
+        if (selectedClothingItem == null) return;
+
         float currentWidth = rotationSlider.GetComponent<Slider>().value;
-        foreach (GameObject imageField in imageFields)
-        {
-            Vector3 scale = imageField.transform.localScale;
-            imageField.transform.localScale = new Vector3(currentWidth, scale.y, scale.z);
-        }
+        Vector3 scale = selectedClothingItem.transform.localScale;
+        selectedClothingItem.transform.localScale = new Vector3(currentWidth, scale.y, scale.z);
     }
 }
