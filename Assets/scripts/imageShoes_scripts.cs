@@ -24,7 +24,7 @@ public class imageShoes_scripts : MonoBehaviour
 
     void Start()
     {
-        SetTogglesActive(false); //sakuma paslepti
+        SetTogglesActive(false);
     }
 
     public void ToggleTogglesVisibility()

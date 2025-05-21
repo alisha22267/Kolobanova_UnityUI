@@ -50,6 +50,7 @@ public class bangs1_scripts : MonoBehaviour
 
     public void OnMainButtonPressed()
     {
+
         panelVisible = !panelVisible;
 
         if (panelVisible)
